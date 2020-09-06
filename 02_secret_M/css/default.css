@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*------------reset css--------------*/
+*{margin:0; padding:0;}
+html, body, article, aside, details, figcaption, figure, header, hgroup, menu, div, nav, section, header, table, tbody, tfoot, thead, tr, th, td, article, aside, audio, video
+{margin:0;padding:0;border:0;outline:0;font-size:100%;
+color:#333;vertical-align:middle;background:transparent;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;word-break:keep-all; line-height:1.4em; font-family:'Nanum Barun Gothic' ,  'sans-serif'; }
+*:focus {outline-style: none;}
+
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub,
+sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, canvas, embed, figcaption,  hgroup, menu, nav, output, ruby, summary, time,
+mark{padding:0;margin:0;font:inherit;border:0;-webkit-font-smoothing: antialiased; font-family:inherit;}
+
+input , button , select{outline-style:none;  -webkit-outline-style:none;  -webkit-outline-style:none; -webkit-border-radius: 0;  -ms-border-radius: 0;  border:0; }
+input:focus{ outline-style: none;}
+input[type="radio"]{background-color:#fff;}
+input[type="checkbox"]{background-color:#fff;}
+
+article,aside,details,figcaption,figure,footer,header,menu,summary,hgroup, menu, nav, section{display:block}
+audio,canvas,progress{display:inline-block}
+progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0} [hidden],template{display:none}
+
+ul, li, dd{list-style:none;padding:0;margin:0;}
+
+span{margin:0;padding:0}
+
+a{margin:0;padding:0;font-size:100%;outline-style:none; -webkit-outline:none;  -webkit-outline:none;background-color:transparent;-webkit-text-decoration-skip:objectsvertical-align:baseline;background:transparent;text-decoration:none;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box; border:0; }
+a:link, a:visited {text-decoration:none}
+a:hover, a:focus, a:active {text-decoration:none;}
+
+img{border-style:none;vertical-align:middle} 
+
+hr{box-sizing:content-box;height:0;overflow:visible}
+
+table{border-collapse:collapse;border-spacing:0}
+table caption{display:none}
+td, th{display:table-cell;vertical-align:middle;}
+
+
+/* clifix */
+.clearfix{*zoom:1}
+.clearfix:after{display:block;clear:both;content:''}
+
+
+
+
+

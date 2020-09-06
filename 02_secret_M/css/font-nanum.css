@@ -1,0 +1,52 @@
+
+/*-------------- 나눔폰트 --------------*/
+
+
+@font-face {
+	font-family:'Nanum Barun Gothic';
+	font-style:normal;
+	font-weight:200;
+	src:local('NanumBarunGothicUltraLight'), local('NanumBarunGothicUltraLight'), local('NanumBarunGothicUltraLight');
+	src:url(../fonts/NanumBarunGothicUltraLight.eot);
+	src:url(../fonts/NanumBarunGothicUltraLight.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/NanumBarunGothicUltraLight.woff) format('woff'),
+	url(../fonts/NanumBarunGothicUltraLight.ttf) format('truetype');
+}
+
+@font-face {
+	font-family:'Nanum Barun Gothic';
+	font-style:normal;
+	font-weight:300;
+	src:local('NanumBarunGothicLight'), local('NanumBarunGothicLight'), local('NanumBarunGothicLight');
+	src:url(../fonts/NanumBarunGothicLight.eot);
+	src:url(../fonts/NanumBarunGothicLight.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/NanumBarunGothicLight.woff) format('woff'),
+	url(../fonts/NanumBarunGothicLight.ttf) format('truetype');
+}
+
+@font-face {
+	font-family:'Nanum Barun Gothic';
+	font-style:normal;
+	font-weight:400;
+	src:local('NanumBarunGothic'), local('NanumBarunGothic'), local('NanumBarunGothic');
+	src:url(../fonts/NanumBarunGothic.eot);
+	src:url(../fonts/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/NanumBarunGothic.woff) format('woff'),
+	url(../fonts/NanumBarunGothic.ttf) format('truetype');
+}
+
+@font-face {
+	font-family:'Nanum Barun Gothic';
+	font-style:normal;
+	font-weight:700;
+	src:local('NanumBarunGothicBold'), local('NanumBarunGothicBold'), local('NanumBarunGothicBold');
+	src:url(../fonts/NanumBarunGothicBold.eot);
+	src:url(../fonts/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/NanumBarunGothicBold.woff) format('woff'),
+	url(../fonts/NanumBarunGothicBold.ttf) format('truetype');
+}
+
+
+
+
+
