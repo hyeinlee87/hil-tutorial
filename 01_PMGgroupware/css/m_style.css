@@ -1,0 +1,309 @@
+
+@media (max-width: 1200px) { 
+	.ccWrap .container {
+		width:100%;
+	}
+}
+
+@media (max-width: 1000px) { 
+
+	.cc_inner{
+		width:100%;
+	}
+	.ccHead .navbar-nav {
+		margin-left: 0;
+	}
+	#sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 5px;
+		margin-right: 5px;
+    }
+    #sidebar .sidebar-header strong {
+        display: none;
+    }
+    #sidebar.active .sidebar-header h3 {
+        display: none;
+    }
+    #sidebar .sidebar-header strong {
+        display: none;
+    }
+    #sidebar.active .sidebar-header h3 {
+        display: none;
+    }
+    #sidebar.active .sidebar-header strong {
+        display: block;
+    }
+    #sidebar.active ul li a {
+        padding: 20px 10px;
+        font-size: 0.85em;
+    }
+    #sidebar.active ul li a i {
+        margin-right:  0;
+        display: block;
+        font-size: 1.8em;
+        margin-bottom: 5px;
+    }
+    #sidebar.active ul ul a {
+        padding: 10px !important;
+    }
+	 .ccFlexwrap  .dropdown-toggle::after {
+        top: auto;
+        bottom: 10px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+ 
+}
+
+@media all and  (max-width:767px){  
+
+	.mt-30{
+		margin-top:20px;
+	}
+	.mb-30{
+		margin-bottom:20px;
+	}
+	.mt-20{
+		margin-top:10px;
+	}
+	.mb-20{
+		margin-bottom:10px;
+	}
+	.cc_container{
+		min-height:auto;
+		padding: 50px 4%;
+	}
+	.ccHead .navbar-nav {
+		margin: 0;
+	}
+	.ccHead .navbar-inverse .navbar-nav.navbar-left>li>a{
+		padding-top: 15px;
+		padding-bottom: 15px;
+		height:auto;
+	}
+	.ccHead  .navbar-inverse .navbar-toggle{
+		background-color: #070f41;
+	}
+	.cc_loginWrap h5{
+		color:#828282;
+		text-align:center;
+		margin-bottom:20px;
+		margin-top:0;
+		font-size:12px;
+	}
+	.cc_loginWrap .btn-group-lg>.btn, .cc_loginWrap .btn-lg{
+		padding:0;
+		height:40px;
+		line-height:40px;
+		border-radius:23px;
+		margin-top:20px;
+		font-size:14px;
+	}
+	.ccWrap .h1 , .ccWrap h1{
+		font-size:24px;
+		padding-top:0;
+		margin-top:0;
+	}
+	.cc_loginWrap .cc_alerttx{
+		font-size:12px;
+	}
+	.input-file .btn-info{
+		font-size:12px;
+	}
+	.pc_only{
+		display:none;
+	}
+	.mb_only{
+		display:block;
+	}
+	.ccWrap .cc_projecth5{
+		margin:0 0 10px 0;
+	}
+	#sidebar .pull-right{
+		display:none;
+	}
+	.cc_relative{
+		padding-bottom:40px;
+		height:auto;
+	}
+
+	/* table 1 */
+	.cc_table td.cc_mb, .cc_table th.cc_mb { 
+	   display:table-cell !important;
+	  }
+	  .cc_table td, .cc_table th { 
+	   display:none;
+	}
+
+	/* table 2 */
+	.cc_table_2 table, .cc_table_2 thead, .cc_table_2 tbody, .cc_table_2 th, .cc_table_2 td, .cc_table_2 tr { 
+		display: block; 
+	}
+	.cc_table_2 thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	.cc_table_2 tr { 
+		border-top: 1px solid #000;
+	}	
+	.cc_table_2 td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 40%; 
+	}
+	.cc_table_2 td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 35%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	.porojectTable td:nth-of-type(1):before { content: "PROJECT ID"; }
+	.porojectTable  td:nth-of-type(2):before { content: "STATUS"; }
+	.porojectTable  td:nth-of-type(3):before { content: "PROGRESS"; }
+	.porojectTable  td:nth-of-type(4):before { content: "PROJECT NAME"; }
+	.porojectTable  td:nth-of-type(5):before { content: "CLIENT"; }
+	.porojectTable  td:nth-of-type(6):before { content: "PM"; }
+	.porojectTable  td:nth-of-type(7):before { content: "TEAM"; }
+	.porojectTable  td:nth-of-type(8):before { content: "DATE"; }
+
+	.costTable td:nth-of-type(1):before { content: ""; }
+	.costTable  td:nth-of-type(2):before { content: "#"; }
+	.costTable  td:nth-of-type(3):before { content: "To"; }
+	.costTable  td:nth-of-type(4):before { content: "공급가액"; }
+	.costTable  td:nth-of-type(5):before { content: "부가세"; }
+	.costTable  td:nth-of-type(6):before { content: "합계"; }
+	.costTable  td:nth-of-type(7):before { content: "Writer"; }
+	.costTable  td:nth-of-type(8):before { content: "DATE"; }
+	.costTable  td:nth-of-type(9):before { content: "Status"; }
+
+
+	/* table 3 */
+	  .table3_row{
+		float:none;
+		width:100%;
+	  }
+	  .display_th{
+		width:35%;
+	  }
+	  .display_td{
+		width:65%;
+	  }
+	  .ccWrap .col-xs-12{
+		padding:0;
+		margin-bottom:20px;
+	  }
+	  .ccWrap h4.modal-title{
+		margin:10px 0;
+	  }
+	  .btn_register {
+		width: 200px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+	}
+	.ccWrap a.btn_register {
+		line-height: 40px;
+	}
+	.noticeUp_wrap.input-file .btn-info {
+		margin-top:0;
+		margin-left:0;
+		width:100%;
+		margin-bottom:5px;
+	}
+	.noticeUp_wrap.input-file{
+		border:0;
+		padding: 5px;
+	}
+	.ccWrap .noticeUp_wrap.input-file .file-name {
+	  display: block;
+	  float:none;
+	  width:100%;
+	  padding: 5px;
+	  height:auto;
+	  max-width: auto !important;
+	  min-width: auto;
+	}
+	.project_modal_title{
+		margin-top:6px;
+	}
+	.ccWrap .form-group{
+		margin-bottom:5px;
+		margin-top:5px;
+	}
+	.memberWrap .users-list li {
+		width: 30%;
+		margin:0 1% 15px 1%;
+	}
+	.nav-tabs.projectNav{
+		display:flex;
+		-webkit-display:flex;
+		-ms-display:flex;
+	}
+	.nav-tabs.projectNav > li{
+		float:none;
+		margin-right: 0;
+		flex: 1;
+		-webkit-flex-grow: 1;
+		-ms-flex-grow: 1;
+		margin-bottom:0;
+	}
+	 .nav.nav-tabs.projectNav > li > a{
+		padding: 10px 2px;
+		font-size:12px;
+		text-align:center;
+		
+	}
+	.pager li > a,
+	.pager li > span {
+		font-size:12px;
+	}
+	.todoWrap{
+		font-size:12px;
+	}
+	.cost-tx b{
+		font-size:12px;
+	}
+	.ccWrap .comt-list .col-xs-12{
+		margin-bottom:0;
+	  }
+	 .noticeThtd h5{
+		font-size:12px;
+	}
+	.notice-span {
+		margin: 0 5px;
+	}
+							
+}
+
+
+
+@media all and  (max-width:650px){  
+
+	.cc_searchBox input{
+		max-width:160px;
+		min-width:159px;
+	}
+	.selectpicker.cc_select_point{
+		max-width:160px;
+		min-width:159px;
+	}
+	.cc_taWrap{
+		min-height:240px;
+		max-height:400px;
+		padding:0;
+	}
+	.team-single-img > img{
+		max-width:100px;
+		max-width:100px;
+	}
+
+
+}
