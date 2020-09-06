@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>PMG Groupware</title>
+
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="https://www.pmgasia.com/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://www.pmgasia.com/favicon.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://www.pmgasia.com/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/common.css"  />
+	<link rel="stylesheet" type="text/css" href="../css/fonts.css"  />
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/w_style.css" />
+	<link rel="stylesheet" media="screen" href="../css/m_style.css" >
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" >
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-datepicker3.css" >
+	<link rel="stylesheet" type="text/css" href="../css/fullcalendar.min.css" >
+
+	<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.easypiechart.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="../js/fullcalendar.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+
+</head>
+
+	
+<body >
+	<div id="ccWrap" class="ccWrap">
+		<header id="ccHead" class="ccHead">
+			<div class="cc_inner">
+				<nav id="ccGNB" class="navbar navbar-inverse">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>                        
+							</button>
+							<a class="navbar-brand" href="#"><img src="../img/logo.png" alt="PMG Group"></a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<!-- left -->
+							<ul class="nav navbar-nav navbar-left">
+								<li><a href="#">Main</a></li>
+								<li class="dropdown active">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Project <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Project </a></li>
+										<li><a href="#">Expense</a></li>
+										<li><a href="#">Invoice</a></li>
+										<li><a href="#">Client / Vendor</a></li>
+									</ul>
+								</li>
+								<li>
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Event <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Event </a></li>
+										<li><a href="#">Event</a></li>
+										<li><a href="#">Event</a></li>
+										<li><a href="#">Event</a></li>
+									</ul>
+								</li>
+								<li>
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Office <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Document</a></li>
+										<li><a href="#">Member</a></li>
+										<li><a href="#">Meeting Room</a></li>
+										<li><a href="#">Book</a></li>
+										<li><a href="#">Education</a></li>
+										<li><a href="#">Certification / Business Card</a></li>
+									</ul>
+								</li>
+								<li><a href="#">52Hours</a></li>
+								<li><a href="#">Finance</a></li>
+							</ul>
+							<!-- //left -->
+							<!-- right -->
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a href="#" title="알림설정">
+										<i class="fa fa-bell-o" aria-hidden="true" id="icon_bell" onclick="change('icon_bell')" ></i>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"  title="로그인" >
+										<i class="fa fa-user-circle"  id="icon_login"></i>
+									</a>
+								</li>
+							</ul>
+							<!-- //right -->
+						</div>
+					</div>
+				</nav>
+			</div>	
+		</header>
+		<section id="ccContent" class="ccContent" >
+			<div class="cc_inner">
+				<div id="ccMain" class="ccMain">
+					<div class="ccFlexwrap">
+						<!-- Side Bar -->
+						<aside id="sidebar">
+							<div class="ccBtnwrap">
+								<a href="" class="btn btn-lg btn-block cc_bg_06" ><i class="fa fa-plus" aria-hidden="true"></i> Register</a>
+							</div>
+							<ul class="list-unstyled components">
+								<li class="active">
+									<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fa fa-user "></i> My Project </a>
+									<ul class="collapse list-unstyled" id="homeSubmenu">
+										<li>
+											<a href="#">Home 1</a>
+										</li>
+										<li>
+											<a href="#">Home 2</a>
+										</li>
+										<li>
+											<a href="#">Home 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fa fa-users "></i> Team</a>
+									<ul class="collapse list-unstyled" id="pageSubmenu">
+										<li>
+											<a href="#">Page 1</a>
+										</li>
+										<li>
+											<a href="#">Page 2</a>
+										</li>
+										<li>
+											<a href="#">Page 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-history "></i> In Progress <span class="label cc_bg_03 pull-right ">104</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-minus"></i> Closed <span class="label cc_bg_04 pull-right">147</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-inbox "></i> Completed <span class="label cc_bg_05 pull-right">1903</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-trash-o "></i> Cancelled <span class="label cc_bg_07 pull-right">5</span></a>
+								</li>
+							</ul>
+						</aside>
+						<!-- // Side Bar -->
+						<div class="container">
+							<dl class="cc_container">
+								 <button type="button" id="sidebarCollapse" class="btn btn-info ccIcon_circle">
+									<i class="fa fa-exchange"></i>
+								</button>
+								<dt class="pageTtile">
+									<h1>Project List</h1>
+								</dt>
+								<dd class="pageContents">
+									<div class="ccTabwarp">
+										<div class="navbar">
+											<div class="cc_relative">
+												<ul class="nav  nav-tabs projectNav">
+													<li class="active"><a href="#tab_Project" >Project</a></li>
+													<li><a href="#tab_Expense" >Expense</a></li>
+													<li><a href="#tab_Cost" >Cost</a></li>
+													<li><a href="#tab_Member" >Member</a></li>
+												</ul>
+												<div class="cc_inputWrap_r">
+													<select name="" id="" class="selectpicker cc_select_point ">
+														<option value="">Progress</option>
+														<option value="">Close</option>
+														<option value="">Cancel</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="tab-content">
+											<!-- Tab 1 Project -->
+											<div class="tab-pane fade active in" id="tab_Project">
+												<dl class="projectWrap">
+													<dd class="pageContents">
+													
+														<!-- 01 프로젝트 디테일 -->
+														<div class="row mb-30">
+															<div	class="cc_table_3 ">
+																<div class="table3_row">
+																	<div class="table_row">
+																		<div class="display_th">Project ID</div>
+																		<div class="display_td">K2006-02205</div>
+																	</div>
+																	<div class="table_row">
+																		<div class="display_th">PM (Onwer)</div>
+																		<div class="display_td">정민교</div>
+																	</div>
+																</div>
+																<div class="table3_row">
+																	<div class="table_row">
+																		<div class="display_th">Project Name</div>
+																		<div class="display_td">Electrolux_FY20H2_Retainer</div>
+																	</div>
+																	<div class="table_row">
+																		<div class="display_th">Function</div>
+																		<div class="display_td">Campaign</div>
+																	</div>
+																</div>
+																<div class="table3_row">
+																	<div class="table_row">
+																		<div class="display_th">Client Name</div>
+																		<div class="display_td">Electrolux</div>
+																	</div>
+																	<div class="table_row">
+																		<div class="display_th">Project Date</div>
+																		<div class="display_td">2020-06-01 ~ 2020-12-31</div>
+																	</div>
+																</div>
+																<div class="table3_row">
+																	<div class="table_row">
+																		<div class="display_th">Extimate Expense</div>
+																		<div class="display_td">10,000,000</div>
+																	</div>
+																	<div class="table_row">
+																		<div class="display_th hidden"></div>
+																		<div class="display_td hidden"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													<!-- //프로젝트 디테일 -->
+
+														<div class="row">
+															<!-- 02 프로젝트진행률 -->
+															<div class="col-lg-4 col-xs-12 ">
+																<h4><b>프로젝트 진행률</b> <a href="" class="pull-right">자세히 보기 <i class="fa fa-angle-right" aria-hidden="true"></i></a></h4>	
+																<div class="cc_boxBasic">
+																	<div class="ccChartwrap mb-20">
+																		<div class="chart chart1" data-percent="80"><span class="title cc_text_06">80%</span></div>
+																	</div>
+																</div>
+																<div class="todoWrap">
+																	<div class="checkbox">
+																		<label><input type="checkbox" value="">견적 확정 10%</label>
+																	</div>
+																	<div class="checkbox">
+																		<label><input type="checkbox" value="">제안서 제출 20%</label>
+																	</div>
+																	<div class="checkbox">
+																		<label><input type="checkbox" value="">디자인 시안 확정 20%</label>
+																	</div>
+																	<div class="checkbox">
+																		<label><input type="checkbox" value="">제작물 제작 15%</label>
+																	</div>
+																	<div class="checkbox">
+																		<label><input type="checkbox" value="">결과 보고서 전달 15%</label>
+																	</div>
+																	<div class="checkbox">
+																		<label><input type="checkbox" value="">협력업체 비용 청구 10%</label>
+																	</div>
+																	<div class="checkbox">
+																		<label><input type="checkbox" value="">협력업체 비용 청구 10%</label>
+																	</div>
+																</div>
+															</div>
+															<!-- 03 Cost -->
+															<div class="col-lg-4 col-xs-12 ">
+																<h4><b>Cost</b> <a href="" class="pull-right">자세히 보기 <i class="fa fa-angle-right" aria-hidden="true"></i></a></h4>	
+																<div class="cc_boxBasic">
+																	<div class="ccChartwrap mb-20">
+																		<div class="chart chart2" data-percent="55"><span class="label cc_bg_03">GPM</span><br/><span class="title cc_text_03">55%</span></div>
+																	</div>
+																	<div class="cc_blank">
+																		<div class="progress"> 
+																			<div class="progress-bar cc_progress-3" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+																				Billed
+																			</div>
+																		</div>
+																		<p class="pull-right cost_Num cc_text_03">5,000,000</p>
+																	</div>
+																	<div class="cc_blank">
+																		<div class="progress">
+																			<div class="progress-bar cc_progress-2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+																				Expensed
+																			</div>
+																		</div>
+																		<p class="pull-right cost_Num cc_text_02">5,000,000</p>
+																	</div>
+																	<div class="cc_blank">
+																		<div class="progress"> <!-- 0% 여도 컬러막대는 30% 유지되어있음-->
+																			<div class="progress-bar cc_progress-4" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0">
+																				Net Profit
+																			</div>
+																		</div>
+																		<p class="pull-right cost_Num cc_text_04">0</p>
+																	</div>
+																</div>
+															</div>
+															<!-- 04 Member -->
+															<div class="col-lg-4 col-xs-12">
+																<h4><b>Member</b> <a href="" class="pull-right">자세히 보기 <i class="fa fa-angle-right" aria-hidden="true"></i></a></h4>	
+																<div class="cc_boxBasic">
+																	<ul class="users-list clearfix">
+																		<li><img src="https://jerry.pmgasia.co.kr/img/user1-128x128.jpg" alt="User Image">
+																		<a class="users-list-name" href="javascript:;">정재일</a>
+																		<span class="users-list-date"><span class="label cc_bg_06">Owner</span>&nbsp;&nbsp;이사</span>
+																		</li>
+																		<li><img src="https://jerry.pmgasia.co.kr/image.php?image=/uploads/7111e1daf5f281dd559de03ce175f3d7.jpg&width=128&height=128" alt="User Image">
+																		<a class="users-list-name" href="javascript:;">이병준</a>
+																		<span class="users-list-date"><span class="label cc_bg_05">PM4</span>&nbsp;&nbsp;차장</span>
+																		</li>
+																		<li><img src="https://jerry.pmgasia.co.kr/img/user1-128x128.jpg" alt="User Image">
+																		<a class="users-list-name" href="javascript:;">한승완</a>
+																		<span class="users-list-date"><span class="label cc_bg_05">PM4</span>&nbsp;&nbsp;사원</span>
+																		</li>
+																		<li><img src="https://jerry.pmgasia.co.kr/img/user1-128x128.jpg" alt="User Image">
+																		<a class="users-list-name" href="javascript:;">우태윤</a>
+																		<span class="users-list-date"><span class="label cc_bg_05">PM4</span>&nbsp;&nbsp;부장</span>
+																		</li>
+																		<li><img src="https://jerry.pmgasia.co.kr/img/user1-128x128.jpg" alt="User Image">
+																		<a class="users-list-name" href="javascript:;">진성상</a>
+																		<span class="users-list-date"><span class="label cc_bg_05">PM4</span>&nbsp;&nbsp;대리</span>
+																		</li>
+																		<li><img src="https://jerry.pmgasia.co.kr/img/user1-128x128.jpg" alt="User Image">
+																		<a class="users-list-name" href="javascript:;">권은솔</a>
+																		<span class="users-list-date"><span class="label cc_bg_05">PM4</span>&nbsp;&nbsp;대리</span>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</dd>
+												</dl>
+											</div>
+											<!-- // Tab 1 Project -->
+
+											<!-- Tab 3 Expense -->
+											<div class="tab-pane fade" id="tab_Expense"> <!-- Expense defult -->
+												<div class="p_pageTtile align-center">
+													<h3>Expense</h3>
+													<h5>한번 보고 두번 보고 자꾸만 보고 싶은 익스펜스</h5>
+												</div>
+												<div class="expenseWrap"> <!-- Expense defult -->
+													<div class="row">
+														<p  class="mb-10 align-right font-12">Registration Date: 2020-08-24</p>
+													</div>
+													<div class="row">
+														<div class="col-lg-4 col-xs-12">
+															<h5><b>Basic Info.</b></h5>	
+															<div class="cc_table_3 ">
+																<div class="table_row">
+																	<div class="display_th">Subject</div>
+																	<div class="display_td">3M 다이어리 추가 제작비</div>
+																</div>
+																<div class="table_row">
+																	<div class="display_th"> Expense #</div>
+																	<div class="display_td">PP20_01348</div>
+																</div>
+																<div class="table_row">
+																	<div class="display_th">Client Name</div>
+																	<div class="display_td">Electrolux</div>
+																</div>
+																<div class="table_row">
+																	<div class="display_th">Writer</div>
+																	<div class="display_td">박혜령</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-lg-4 col-xs-12 ">
+															<h5><b>Account Info.</b> </h5>	
+															<div class="cc_table_3 ">
+																<div class="table_row">
+																	<div class="display_th">Vendor Name</div>
+																	<div class="display_td">한국쓰리엠</div>
+																</div>
+																<div class="table_row">
+																	<div class="display_th">Account Name</div>
+																	<div class="display_td">한국쓰리엠</div>
+																</div>
+																<div class="table_row">
+																	<div class="display_th">Bank</div>
+																	<div class="display_td">국민은행</div>
+																</div>
+																<div class="table_row">
+																	<div class="display_th">Account</div>
+																	<div class="display_td">123-9876543-012</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-lg-4 col-xs-12">
+															<h5><b>Attachment</b> </h5>	
+															<div class="well expense_file">
+																<a href="" target="_blank">3M 사업자 등록증.jpg</a>
+																<a href="" target="_blank">3M 통장사본.png</a>
+																<a href="" target="_blank">전자세금계산서.jpg</a>
+															</div>
+														</div>
+													</div>
+													<div class="row mt-30">
+														<div class="col-lg-4 col-xs-12">
+															<h5><b>Basic Info.</b></h5>	
+															<div class="cc_table_3 ">
+																<div class="table_row">
+																	<div class="display_th">Project </div>
+																	<div class="display_td">FY20Q2_3M_PSD Digital Campaign_Jul_김선종K </div>
+																</div>
+																<div class="table_row">
+																	<div class="display_th">Project #</div>
+																	<div class="display_td">P20_1234 </div>
+																</div>
+																<div class="table_row">
+																	<div class="display_th">Client</div>
+																	<div class="display_td">Electrolux</div>
+																</div>
+																<div class="table_row">
+																	<div class="display_th">Project Leader</div>
+																	<div class="display_td">박혜령</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-lg-8 col-xs-12 ">
+															<h5><b>Expense Items</b> </h5>	
+															<table class="cc_table  label_big">
+																<thead>
+																	<tr>
+																		<th class="cc_mb">3M 다이어리 추가 제작비</th>
+																		<th >800,000</th>
+																		<th>80,000</th>
+																		<th class="cc_mb" >880,000 </th>
+																	</tr>
+																</thead>
+																<tbody> 
+																	<tr>
+																		<td class="cc_mb"><b>Total</b></td>
+																		<td>800,000</td>
+																		<td>80,000</td>
+																		<td class="cc_mb">880,000</td>
+																	</tr>
+																	<tr>
+																		<td class="cc_mb"><b>Manager</b></td>
+																		<td></td>
+																		<td></td>
+																		<td class="cc_mb"><b>김지훈</td>
+																	</tr>
+																	<tr>
+																		<td class="cc_mb"><b>Status</b></td>
+																		<td></td>
+																		<td></td>
+																		<td class="cc_mb"><span class="label cc_bg_02">Claimed</span></td>
+																	</tr>
+																</tbody>
+															</table>
+															<div class="pull-right mt-10">
+																<span class="label  cc_bg_02">Claimed</span>
+																<i class="fa fa-long-arrow-right"></i>
+																<span class="label  cc_bg_03">Confirmed</span>
+																<i class="fa fa-long-arrow-right"></i>
+																<span class="label cc_bg_04">Approved</span>
+																<i class="fa fa-long-arrow-right"></i>
+																<span class="label  cc_bg_06">Completed</span>
+															</div>
+														</div>
+													</div>
+													<ul class="pager mt-30">
+														<li class="previous"><a href="#">Back</a></li>
+														<li class="pull-right">
+															<a href="javascript:;" class="btn btn-sm cc_bg_05" title="Edit" data-toggle="modal" data-target="#expense_edit"><i class="fa fa-pencil pc_only" aria-hidden="true"></i> Edit</a>
+															<a href="" class="btn btn-sm"  title="Download"><i class="fa fa-download pc_only" aria-hidden="true"></i>  Download</a>
+															<a href="" class="btn btn-sm"  title="Print"><i class="fa fa-print pc_only" aria-hidden="true"></i>  Print</a>
+														</li>
+													</ul>
+												</div>
+
+												<div class="expenseWrap"> <!-- Expense edit -->
+													<div class="row">
+														<div class="col-lg-4 col-xs-12">
+															<h5><b>Project</b></h5>	
+															<div class="cc_table_3 ">
+																<div class="table_row">
+																	<div class="display_th">Project</div>
+																	<div class="display_td"> FY20Q2_3M_PSD Digital Campaign_Jul_김선종K</div>
+																</div>
+																<div class="table_row">
+																	<div class="display_th">Expense #</div>
+																	<div class="display_td">PP20_01348</div>
+																</div>
+																<div class="table_row">
+																	<div class="display_th">Client</div>
+																	<div class="display_td">3M </div>
+																</div>
+																<div class="table_row">
+																	<div class="display_th">Project Leader</div>
+																	<div class="display_td"> 가예원</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-lg-8 col-xs-12">
+															<h5><b>Account Info.</b> </h5>	
+															<div class="cc_table_3">
+																<div class="table3_row">
+																	<div class="table_row">
+																		<div class="display_th">작성자</div>
+																		<div class="display_td">박혜령</div>
+																	</div>
+																</div>
+																<div class="table3_row">
+																	<div class="table_row">
+																		<div class="display_th">
+																			Expense Type
+																		</div>
+																		<div class="display_td">
+																			<select name="exp_kind" id="exp_kind" class="input-sm" onchange="_check_exp_type(this);">
+																				<option value="">Select</option>
+																				<option value="acc01">통번역비</option><option value="acc02">이벤트배뉴</option><option value="acc03">프로모션판촉비</option><option value="acc04">운송비</option><option value="acc05">교통비</option><option value="acc07">식비</option><option value="acc08">소모품비</option><option value="acc09">광고비</option><option value="acc10">외주용역비</option><option value="acc11">접대비</option><option value="acc12">잡비</option><option value="acc00">제작비</option>                                    
+																			</select>
+																		</div>
+																	</div>
+																</div>
+																<table class="cc_table">
+																	<tbody>
+																		<tr>
+																			<th colspan="4">Subject</th>
+																		</tr>
+																		<tr>
+																			<td colspan="4" style="background-color:#fff;"><input type="text" placeholder="" class="form-control input-sm" id="subject" name="subject" value=""></td>
+																		</tr>
+																		<tr>
+																			<th>Vendor Name</th>
+																			<th>Bank Name</th>
+																			<th>Bank Account</th>
+																		</tr>
+																		<tr>
+																			<td style="background-color:#fff;">
+																				<div class="input-group input-group-sm">
+																					<input type="text" placeholder="" class="form-control input-sm" id="vendor_nm" name="vendor_nm" style="width:90%;">
+																					<span class="input-group-btn">
+																						<button class="btn btn-info btn-flat" type="button" data-toggle="modal" data-target="#common_plate"><i class="fa fa-file-text-o"></i></button>
+																					</span>
+																				</div>
+																			</td>
+																			<td style="background-color:#fff;">
+																				<select name="bank_code" id="bank_code" class="form-control input-sm"> 
+																					<option value="">선택</option>
+																					<option value="005">외환은행</option>
+																					<option value="004">국민은행</option>
+																					<option value="003">기업은행</option>
+																					<option value="011">농협</option>
+																					<option value="088">신한은행</option>
+																					<option value="020">우리은행</option>
+																					<option value="023">SC은행</option>
+																					<option value="081">하나은행</option>
+																					<option value="027">한국씨티은행</option>
+																					<option value="039">경남은행</option>
+																					<option value="034">광주은행</option>
+																					<option value="031">대구은행</option>
+																					<option value="055">도이치은행</option>
+																					<option value="032">부산은행</option>
+																					<option value="002">산업은행</option>
+																					<option value="045">새마을금고</option>
+																					<option value="007">수협중앙회</option>
+																					<option value="048">신용협동조합</option>
+																					<option value="071">우체국</option>
+																					<option value="037">전북은행</option>
+																					<option value="035">제주은행</option>
+																					<option value="054">HSBC은행</option>
+																					<option value="050">상호저축</option>
+																					<option value="057">제이피모간 체이스은행</option>
+																					<option value="060">뱅크오브아메리카</option>
+																					<option value="061">BNP파리바</option>
+																					<option value="209">동양증권</option>
+																					<option value="218">현대증권</option>
+																					<option value="230">미래에셋증권</option>
+																					<option value="238">대우증권</option>
+																					<option value="240">삼성증권</option>
+																					<option value="243">한국투자증권</option>
+																					<option value="247">우리투자증권</option>
+																					<option value="261">교보증권</option>
+																					<option value="262">하이투자증권</option>
+																					<option value="263">에이치엠씨투자증권</option>
+																					<option value="264">키움증권</option>
+																					<option value="265">이트레이드증권</option>
+																					<option value="266">에스케이증권</option>
+																					<option value="267">대신증권</option>
+																					<option value="268">솔로몬투자증권</option>
+																					<option value="269">한화증권</option>
+																					<option value="270">하나대투증권</option>
+																					<option value="278">신한금융투자</option>
+																					<option value="279">동부증권</option>
+																					<option value="280">유진증권</option>
+																					<option value="287">메리츠증권</option>
+																					<option value="289">NH투자증권</option>
+																					<option value="290">부국증권</option>
+																					<option value="291">신영증권</option>
+																					<option value="064">산림조합</option>
+																					<option value="292">LIG투자증권</option>
+																					<option value="999">웰컴저축은행</option>
+																					<option value="089">케이뱅크</option>
+																					<option value="090">카카오뱅크</option>                            
+																				</select>
+																			</td>
+																			<td style="background-color:#fff;"><input type="text" placeholder="Bank Account" class="form-control input-sm" id="bank_account" name="bank_account"></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+													<div class="row mt-30">
+														<div class="col-lg-8 col-xs-12 ">
+															<h5><b>Expense Items</b> </h5>	
+															<table class="cc_table ">
+																<thead>
+																	<tr>
+																		<th class="cc_mb"><b>Total 3 items</b></th>
+																		<th><b>1,340,000</b></th>
+																		<th><b>130,000</b></th>
+																		<th class="cc_mb"> 1,470,000</b></th>
+																		<th class="cc_mb"></th>
+																	</tr>
+																</thead>
+																<tbody> 
+																	<tr>
+																		<td class="cc_mb"><b>11번가 광고비</b></td>
+																		<td >500,000</td>
+																		<td>50,000</td>
+																		<td class="cc_mb">550,000</td>
+																		<td class="cc_mb"><a href="" title="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+																	</tr>
+																	<tr>
+																		<td class="cc_mb"><b>0801_미팅 식비</b></td>
+																		<td>40,000</td>
+																		<td>0</td>
+																		<td class="cc_mb"><b> 40,000</td>
+																		<td  class="cc_mb"><a href="" title="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+																	</tr>
+																	<tr>
+																		<td class="cc_mb"><b>3M 다이어리 추가 제작비</b></td>
+																		<td>800,000</td>
+																		<td>80,000</td>
+																		<td class="cc_mb"> 880,000</td>
+																		<td  class="cc_mb"><a href="" title="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<div class="col-lg-4 col-xs-12">
+															<h5><b>Attachment</b> </h5>	
+															<div class="well expense_file">
+																<a href="" target="_blank">3M 사업자 등록증.jpg <i class="fa fa-times" aria-hidden="true"></i></a>
+																<a href="" target="_blank">3M 통장사본.png <i class="fa fa-times" aria-hidden="true"></i></a>
+																<a href="" target="_blank">전자세금계산서.jpg <i class="fa fa-times" aria-hidden="true"></i></a>
+															</div>
+														</div>
+													</div>
+													<ul class="pager mt-30">
+														<li class="previous"><a href="#">Back</a></li>
+														<li class="pull-right">
+															<a href="javascript:;" class="btn btn-sm cc_bg_06" title="Edit" ><i class="fa fa-check" aria-hidden="true"></i> 완료</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<!-- // Tab 3 Expense -->
+
+											<!-- Tab 4 Cost -->
+											<div class="tab-pane fade" id="tab_Cost"> 
+												<dl class="projectWrap">
+													<dt class="p_pageTtile">
+														<h3>Cost</h3>
+														<h5>비용은 정확하게, 계산은 실수 없이</h5>
+													</dt>
+													<dd class="pageContents">		
+														<div class="row mb-30">
+															<div class="cc_relative">
+																<span  class="btn-sm  cc_bg_03">Quotation</span>
+																<div id="project_list_contents_filter" class="dataTables_filter cc_searchBox">
+																	<input type="search" class="form-control input-sm" placeholder="Search" aria-controls="project_list_contents">
+																</div>
+															</div>
+															<div class="ccTable">
+																<table class="cc_table_2 costTable">
+																	<thead>
+																		<tr>
+																			<th style="width:6%;"></th>
+																			<th style="width:12%;">#</th>
+																			<th style="width:12%;">To</th>
+																			<th style="width:12%;">공급가액</th>
+																			<th style="width:12%;">부가세</th>
+																			<th style="width:12%;">합계</th>
+																			<th style="width:10%;">Writer</th>
+																			<th style="width:12%;">Date</th>
+																			<th style="width:12%;">Status</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td><input type="checkbox"></td>
+																			<td>Q200801</td>
+																			<td>한국쓰리엠</td>
+																			<td>15,000,000</td>
+																			<td>1,500,000</td>
+																			<td>16,500,000</td>
+																			<td>박혜령</td>
+																			<td>2020-08-01</td>
+																			<td>
+																				<div class="custom-control custom-switch">
+																					<input type="checkbox" class="custom-control-input" id="customSwitch1">
+																					<label class="custom-control-label" for="customSwitch1"></label>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td><input type="checkbox"></td>
+																			<td><a href="">Q200801</a></td>
+																			<td>한국쓰리엠</td>
+																			<td>15,000,000</td>
+																			<td>1,500,000</td>
+																			<td>16,500,000</td>
+																			<td>박혜령</td>
+																			<td>2020-08-01</td>
+																			<td>
+																				<div class="custom-control custom-switch">
+																					<input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+																					<label class="custom-control-label" for="customSwitch2"></label>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr class="cost_totalRow">
+																			<td colspan="3" class="text-center">Total</td>
+																			<td>18,000,000</td>
+																			<td>1,670,000</td>
+																			<td> 19,800,000</td>
+																			<td colspan="3"></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+
+														<div class="row">
+															<div class="cc_relative">
+																<span  class="btn-sm  cc_bg_04">Invoice</span>
+															</div>
+															<div class="ccTable">
+																<table class="cc_table_2 costTable">
+																	<thead>
+																		<tr>
+																			<th style="width:6%;"></th>
+																			<th style="width:12%;">#</th>
+																			<th style="width:12%;">To</th>
+																			<th style="width:12%;">공급가액</th>
+																			<th style="width:12%;">부가세</th>
+																			<th style="width:12%;">합계</th>
+																			<th style="width:10%;">Writer</th>
+																			<th style="width:12%;">Date</th>
+																			<th style="width:12%;">Status</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td valign="top" colspan="9" class="dataTables_empty">No data available in table</td>
+																		</tr>
+																		<tr>
+																			<td><input type="checkbox"></td>
+																			<td><a href="">Q200801</a></td>
+																			<td>한국쓰리엠</td>
+																			<td>15,000,000</td>
+																			<td>1,500,000</td>
+																			<td>16,500,000</td>
+																			<td>박혜령</td>
+																			<td>2020-08-01</td>
+																			<td>
+																				<span class="label cc_bg_02">Claimed</span>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td><input type="checkbox"></td>
+																			<td><a href="">Q200801</a></td>
+																			<td>한국쓰리엠</td>
+																			<td>15,000,000</td>
+																			<td>1,500,000</td>
+																			<td>16,500,000</td>
+																			<td>박혜령</td>
+																			<td>2020-08-01</td>
+																			<td>
+																				<span class="label cc_bg_03">Confirmed</span>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td><input type="checkbox"></td>
+																			<td><a href="">Q200801</a></td>
+																			<td>한국쓰리엠</td>
+																			<td>15,000,000</td>
+																			<td>1,500,000</td>
+																			<td>16,500,000</td>
+																			<td>박혜령</td>
+																			<td>2020-08-01</td>
+																			<td>
+																				<span class="label cc_bg_06">Completed</span>
+																			</td>
+																		</tr>
+																		<tr class="cost_totalRow">
+																			<td colspan="3" class="text-center">Total</td>
+																			<td>18,000,000</td>
+																			<td>1,670,000</td>
+																			<td> 19,800,000</td>
+																			<td colspan="3"></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+
+														<div class="row mt-20 clearfix">
+															<div class="cost-progWrap">
+																<div class="progress-bar btn_gra" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+																	17,600,000 /19,800,000 
+																</div>
+															</div>
+															<div class="cost-tx"><b class="cc_text_02">빌링 완료</b></div>
+														</div>
+														<ul class="pager">
+															<li class="pull-right">
+																<a href="javascript:;" class="btn btn-sm cc_bg_06" title="Edit" data-toggle="modal" data-target="#expense_edit">Register</a>
+																<a href="" class="btn btn-sm"  title="Download">Modify</a>
+																<a href="" class="btn btn-sm"  title="Print">Delete</a>
+															</li>
+														</ul>
+
+													</dd>
+												</dl>
+											</div>
+											<!-- // Tab 4 Cost -->
+
+											<!-- Tab 5 Member -->
+											<div class="tab-pane fade" id="tab_Member">
+												<div class="p_pageTtile align-center">
+													<h3>Memder</h3>
+													<h5>프로젝트 멤버 소개 문구</h5>
+												</div>
+												<div class="memberWrap">
+													<ul class="users-list clearfix">
+														<li><img src="https://jerry.pmgasia.co.kr/img/user1-128x128.jpg" alt="User Image">
+														<a class="users-list-name" href="javascript:;">정재일</a>
+														<span class="users-list-date"><span class="label cc_bg_06">Owner</span>&nbsp;&nbsp;이사</span>
+														</li>
+														<li><img src="https://jerry.pmgasia.co.kr/image.php?image=/uploads/7111e1daf5f281dd559de03ce175f3d7.jpg&width=128&height=128" alt="User Image">
+														<a class="users-list-name" href="javascript:;">이병준</a>
+														<span class="users-list-date"><span class="label cc_bg_05">PM4</span>&nbsp;&nbsp;차장</span>
+														</li>
+														<li><img src="https://jerry.pmgasia.co.kr/img/user1-128x128.jpg" alt="User Image">
+														<a class="users-list-name" href="javascript:;">한승완</a>
+														<span class="users-list-date"><span class="label cc_bg_05">PM4</span>&nbsp;&nbsp;사원</span>
+														</li>
+														<li><img src="https://jerry.pmgasia.co.kr/img/user1-128x128.jpg" alt="User Image">
+														<a class="users-list-name" href="javascript:;">우태윤</a>
+														<span class="users-list-date"><span class="label cc_bg_05">PM4</span>&nbsp;&nbsp;부장</span>
+														</li>
+														<li><img src="https://jerry.pmgasia.co.kr/img/user1-128x128.jpg" alt="User Image">
+														<a class="users-list-name" href="javascript:;">진성상</a>
+														<span class="users-list-date"><span class="label cc_bg_05">PM4</span>&nbsp;&nbsp;대리</span>
+														</li>
+														<li><img src="https://jerry.pmgasia.co.kr/img/user1-128x128.jpg" alt="User Image">
+														<a class="users-list-name" href="javascript:;">권은솔</a>
+														<span class="users-list-date"><span class="label cc_bg_05">PM4</span>&nbsp;&nbsp;대리</span>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<!-- // Tab 5 Member -->
+
+										</div>
+									</div>
+								</dd>
+							</dl>		
+						</div>	
+					</div>			
+				</div>
+			</div>	
+		</section>
+		<footer id="ccFooter">
+			<div class="cc_inner">
+				(C) 2020 PMG Integrated Communication All Rights Reserved
+			</div>	
+		</footer>
+
+		<!-- modal : Expense Edit -->
+		<div class="modal fade cc_notice" id="expense_edit" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-sm modal-notify modal-danger" role="document" style="margin:60px auto;">
+				<div class="modal-content text-center">
+					<div class="modal-body">
+						원하는 작업을 선택해주세요.
+					</div>
+					<div class="modal-footer flex-center">
+						<a href="" class="btn waves-effect cc_bg_02"><i class="fa fa-pencil pc_only" aria-hidden="true"></i> Edit</a>
+						<a type="button" class="btn  btn-default waves-effect" data-dismiss="modal"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- modal : Vendor Name -->	
+		<div class="modal in" id="common_plate" aria-hidden="false" >   
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						<h4><strong>Address List</strong></h4>
+					</div>
+					<div class="modal-body">			
+						<form class="form-horizontal">
+						<div class="box-body">
+							<div class="row">
+								<div class="col-lg-12">
+									<table class="table table-bordered table-striped">
+										<tbody><tr><!--idx, addr_name, bank_code, bank_name, account_name, account, user_id, ucnt-->
+											<th style="text-align:center;">Vendor Name</th>
+											<th style="text-align:center;">Account Name</th>
+											<th style="text-align:center;">Bank Name</th>
+											<th style="text-align:center;">Bank Account</th>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control input-sm" id="addr_name" name="addr_name" placeholder="Vendor Name"></td>
+											<td><input type="text" class="form-control input-sm" id="account_name" name="account_name" placeholder="Account Name"></td>
+											<td>
+																					<select name="bank_code" id="bank_code" class="form-control input-sm" data-placeholder="123123"> 
+													<option value=""></option>
+												<option value="005">외환은행</option><option value="004">국민은행</option><option value="003">기업은행</option><option value="011">농협</option><option value="088">신한은행</option><option value="020">우리은행</option><option value="023">SC은행</option><option value="081">하나은행</option><option value="027">한국씨티은행</option><option value="039">경남은행</option><option value="034">광주은행</option><option value="031">대구은행</option><option value="055">도이치은행</option><option value="032">부산은행</option><option value="002">산업은행</option><option value="045">새마을금고</option><option value="007">수협중앙회</option><option value="048">신용협동조합</option><option value="071">우체국</option><option value="037">전북은행</option><option value="035">제주은행</option><option value="054">HSBC은행</option><option value="050">상호저축</option><option value="057">제이피모간 체이스은행</option><option value="060">뱅크오브아메리카</option><option value="061">BNP파리바</option><option value="209">동양증권</option><option value="218">현대증권</option><option value="230">미래에셋증권</option><option value="238">대우증권</option><option value="240">삼성증권</option><option value="243">한국투자증권</option><option value="247">우리투자증권</option><option value="261">교보증권</option><option value="262">하이투자증권</option><option value="263">에이치엠씨투자증권</option><option value="264">키움증권</option><option value="265">이트레이드증권</option><option value="266">에스케이증권</option><option value="267">대신증권</option><option value="268">솔로몬투자증권</option><option value="269">한화증권</option><option value="270">하나대투증권</option><option value="278">신한금융투자</option><option value="279">동부증권</option><option value="280">유진증권</option><option value="287">메리츠증권</option><option value="289">NH투자증권</option><option value="290">부국증권</option><option value="291">신영증권</option><option value="064">산림조합</option><option value="292">LIG투자증권</option>                            
+												</select>
+											</td>
+											<td><input type="text" class="form-control input-sm" id="account" name="account" placeholder="account" onkeyup="_save_account();"></td>
+										</tr>
+																</tbody></table>
+								</div>
+							</div>
+						</div>
+						<div class="box-body">
+							<div class="row">
+								<input type="hidden" name="selected_user_id" id="selected_user_id">
+								<div class="col-lg-12" id="selected_member_plate"></div>
+							</div>
+						</div><!-- /.box-body -->
+						</form>	
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				var _save_account = function(){
+					var addr_nm, acc_nm, bank_cd, bank_nm, account;
+					if(event.keyCode=='13'){
+						addr_nm  = $("#addr_name");
+						acc_nm   = $("#account_name");
+						bank_cd  = $("#bank_code");
+						bank_nm  = "";
+						account  = $("#account");
+						
+						addr_nm.removeClass("btn-danger");
+						acc_nm.removeClass("btn-danger");
+						bank_cd.removeClass("btn-danger");
+						account.removeClass("btn-danger");
+						if(addr_nm.val()==""){  addr_nm.addClass("btn-danger"); return;}
+						if(acc_nm.val()==""){   acc_nm.addClass("btn-danger"); return;}
+						if(bank_cd.val()==""){  bank_cd.addClass("btn-danger"); return;}
+						if(account.val()==""){  account.addClass("btn-danger"); return;}
+						
+						var params = {};
+						params.addr_nm = addr_nm.val();
+						params.acc_nm = acc_nm.val();
+						params.bank_cd = bank_cd.val();
+						params.bank_nm = $("#bank_code option:selected").text();
+						params.account = account.val();
+						
+						$.post("/common/account_address_save", params, function(data){
+							$("#common_plate").html(data);
+						});
+					}
+				}
+
+				var _set_account = function(idx){
+					$.post("/common/account_address_set/"+idx, function(data){
+						$("#vendor_nm").val(data.addr_nm);
+						$("#account_nm").val(data.account_name);
+						$("#bank_account").val(data.account);
+						$("#bank_code").val(data.bank_code);
+					}, "json");
+					
+					$("#common_plate").modal('hide');
+				}
+			</script>
+		</div>
+	</div>	
+</body>
+
+</html>
