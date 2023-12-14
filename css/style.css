@@ -1,6 +1,6 @@
 /* ----------------------------------
 		 Wrirer : Lee hyein
-		 Date : 2020-07-01
+		 Date : 2020-07-01~
 -------------------------------------*/
 
 .wrap{max-width:1920px; margin:0 auto; width:100%; background-color:#ffffff; }
@@ -36,8 +36,20 @@ header{
 }
 h4{
 	font-size:22px;
-	text-align:center;
+	margin-bottom:12px;
 	font-weight:500;
+	color:#2e2e2e;
+}
+h4 > b{
+	display:inline-block;
+	font-size:16px;
+	padding:6px 12px;
+	background-color:#fff;
+	font-weight:500;
+	color:#2e2e2e;
+	margin-bottom:10px;
+	border-radius:2px;
+	
 }
 .resumWrap{
 	width:100%;
@@ -54,17 +66,17 @@ h4{
 	vertical-align:top;
 }
 dt.cell{
-	width:30%;
+	width:33%;
 	padding:40px 20px 40px 40px;
 }
 dd.cell{
-	width:35%;
+	width:33%;
 	padding:40px 20px;
 }
 .row{
 	width:100%;
 }
-.strengthWrap {
+.strengthWrap , .careerwrap {
 	width:100%;
 	margin-top: 20px;	
 }
@@ -79,12 +91,7 @@ dd.cell{
 	vertical-align:top;
 	padding-bottom:8px;
 }
-.strengthWrap h4{
-	padding-bottom:10px;
-	color:#000;
-	font-size:16px;
-	text-align:left;
-}
+
 .strengthWrap h5{
 	padding-bottom:3px;
 	color:#000;
@@ -149,7 +156,7 @@ dd.cell{
 
 /* strength - development */
 .strength-develop{
-	width:100%:
+	width:100%;
 }
 .strength-develop img{
 	width:100%;
@@ -177,6 +184,7 @@ dd.cell{
     border: 0;
     color: #fff !important;
 }
+
 
 
 /* strength - Design */
@@ -244,6 +252,66 @@ dd.cell{
 .hybrid_01{
 	left:6%;
 	bottom:19%;
+}
+
+.conBox{
+	width:100%;
+	background-size:820px 440px;
+	height:440px;
+	padding:60px;
+	
+}
+.conBox h4{
+	width:50%;
+	display:inline-block;
+	padding-bottom:3%;
+	border-bottom:1px solid #ccc;
+	color:#fff;
+}
+.detailBox{
+	width:100%;
+	padding:2% 0 3% 0;
+}
+.detailBox > p{
+	width:100%;
+	display:block;
+	color:#fff;
+}
+.detailBox > p > span{
+	display:inline-block;
+	width:80px;
+	font-weight:bold;
+	color:#fff;
+}
+.box1{
+	background:#055e1e url('../img/mokup.png') no-repeat center right;
+}
+.box2{
+	background:#7b83ea url('../img/okup.png') no-repeat center right;
+}
+.box3{
+	background:#43655c url('../img/develop_01.png') no-repeat center right;
+}
+.box4{
+	background:#7b83ea url('../img/develop_02.png') no-repeat center right;
+}
+.box5{
+	background:#43655c url('../img/develop_03.png') no-repeat center right;
+}
+.box6{
+	background:#7b83ea url('../img/develop_04.png') no-repeat center right;
+}
+.boxbtnArea > a{
+	position:static;
+	display:inline-block;
+	width:160px;
+	height:52px;
+	line-height:52px;
+	text-align:center;
+	margin-right:16px;
+	background-color:rgb(255, 255, 255);
+	border-radius:4px;
+	color:#262626;
 }
 
 
@@ -350,7 +418,6 @@ footer{
 	dt.cell{
 		width:100%;
 		padding:6%;
-		border-bottom:1px solid #000;
 	}
 	dd.cell{
 		width:100%;
