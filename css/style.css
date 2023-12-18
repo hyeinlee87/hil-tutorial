@@ -409,6 +409,52 @@ footer{
 
 @media screen and (max-width:767px) {
 
+	.box1 {
+		background: #054604 url(../img/mokup.png) no-repeat top center;
+		background-size: 410px 220px;
+	}
+	.box2{
+		background:#33d9c9 url('../img/mokup_naver.png') no-repeat top center;
+		background-size: 410px 220px;
+	}
+	.box3{
+		background:#1d2764 url('../img/develop_01.png') no-repeat top center;
+		background-size: 410px 220px;
+	}
+	.box4{
+		background:#303030 url('../img/develop_02.png') no-repeat top center;
+		background-size: 410px 220px;
+	}
+	.box5{
+		background:#f4ab20 url('../img/develop_03.png') no-repeat top center;
+		background-size: 410px 220px;
+	}
+	.box6{
+		background:#aaeaf6 url('../img/develop_04.png') no-repeat top center;
+		background-size: 410px 220px;
+	}
+	.conBox {
+		height: auto;
+		padding: 240px 24px 30px 24px;
+	}
+	h4 {
+		font-size:18px;
+	}
+	.conBox h4{
+		width:100%;
+	}
+	.boxbtnArea > a {
+		width: 120px;
+		height: 46px;
+		line-height: 46px;
+		text-align: center;
+		margin-right: 4px;
+		font-size:12px;
+	}
+	.detailBox{
+		font-size:14px;
+	}
+
 	.resumArea{
 		display:block;
 		width:100%;
