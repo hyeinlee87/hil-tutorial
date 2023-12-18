@@ -1,0 +1,79 @@
+@import url("font-awesome.min.css");
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+html, body, article, aside, details, figcaption, figure, header, hgroup, menu, 
+div, nav, section, header, table, tbody, tfoot, thead, tr, th, td, article, aside, audio, video ,textarea{
+margin:0;padding:0;border:0;outline:0;font-size:100%;color:#0e141c;vertical-align:middle;background:transparent;
+box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
+word-break:keep-all; line-height:1.4em; font-family: 'Gotham' , 'notokr' , sans-serif , arial; letter-spacing:-0.5px; font-weight:400;
+}
+*:focus {outline-style: none;}
+
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub,
+sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, canvas, embed, figcaption,  hgroup, menu, nav, output, ruby, summary, time,
+mark{padding:0;margin:0;font:inherit;border:0;-webkit-font-smoothing: antialiased;box-sizing:inherit; line-height:1.4em; font-family:inherit;}
+
+input , button , select{outline-style:none;  -webkit-outline-style:none; -webkit-outline-style:none; -webkit-border-radius: 0;  -ms-border-radius: 0;  border:0; font:inherit;box-sizing:inherit;}
+input:focus{ outline-style: none;}
+input[type="radio"]{background-color:transparent; border:3px solid #ccc;}
+input[type="checkbox"]{background-color:transparent; border:3px solid #ccc;}
+input[type="password"]{font-family:'arial' , sans-serif; color:#000;}
+
+article,aside,details,figcaption,figure,footer,header,menu,summary,hgroup, menu, nav, section{display:block; font-family:inherit;box-sizing:inherit;}
+audio,canvas,progress{display:inline-block}
+progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0} [hidden],template{display:none}
+
+ul, li, dd{list-style:none;padding:0;margin:0;}
+
+span{margin:0;padding:0}
+
+a{margin:0;padding:0;font-size:100%;outline-style:none; -webkit-outline:none;  color:#000;-webkit-outline:none;background-color:transparent;-webkit-text-decoration-skip:objectsvertical-align:baseline;
+background:transparent;text-decoration:none;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box; border:0; }
+a:link, a:visited {text-decoration:none}
+a:hover, a:focus, a:active {text-decoration:none;}
+
+img{border-style:none;vertical-align:middle} 
+
+hr{box-sizing:content-box;height:0;overflow:visible}
+
+table{border-collapse:collapse;border-spacing:0}
+table caption{display:none}
+td, th{display:table-cell;vertical-align:middle;}
+
+/* clifix */
+.clearfix{*zoom:1}
+.clearfix:after{display:block;clear:both;content:''}
+
+/* 공통 */
+.left{float:left;}
+.right{float:right;}
+.bold , b{font-weight:700;}
+.center{text-align:center;}
+.hidden{overflow:hidden;}
+.underline{text-decoration:underline; }
+a.underline{text-decoration:underline; display:inline-block;}
+.block{display:block; width:100%;}
+.alignright{text-align:right;}
+.alignleft{text-align:left;}
+.alignright img{display:inline-block;}
+.gothic{font-family:gothic;}
+.wordbreak{word-break:keep-all;}
+.breakall{word-break:break-all;}
+.border{border:1px solid #eaeaea;}
+.borderbottom{border-bottom:1px solid #eaeaea;}
+.block{display:block; width:100%;}
+.none{display:none;}
+.inlineblock{display:inline-block; }
+.inline{display:inline; }
+.relative{position:relative;}
+.mb_only{display:none;}
+.pc_only{display:block;}
+
+
+
+
+
+
+
