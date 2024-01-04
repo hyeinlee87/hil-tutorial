@@ -265,13 +265,13 @@ dd.cell{
 .conBox h4{
 	width:46%;
 	display:inline-block;
-	padding-bottom:2.5%;
+	padding-bottom:2%;
 	border-bottom:1px solid #f6f6f6;
 	color:#fff;
 }
 .detailBox{
 	width:100%;
-	padding:1.2% 0 3% 0;
+	padding:1% 0 3% 0;
 }
 .detailBox > p{
 	width:100%;
